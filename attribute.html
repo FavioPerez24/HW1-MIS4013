@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html>
-<body>
-   <h2>What Can JavaScript Do?</h2>
-   <p>JavaScript can change HTML attribute values.</p>
-   <h4>Changing the <i> src attribute value </i> of below image on button click.</h4>
-   <img id = "img" src = "https://i.postimg.cc/KjK1wL3c/bulb-off.png" alt = "off">
-   <button onclick = "changeImage()">change Image</button>
-   <script>
-      function changeImage() {
-         let imgDiv = document.getElementById("img");
-         imgDiv.src = 'https://kvkokrajhar.files.wordpress.com/2016/11/pic_bulbon.gif?w=416&resize=416%2C749&h=749';
-      }
-   </script>
-</body>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>On Off Bulb</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bulb center">
+        <div class="inside center"></div>
+        <div class="lower center"></div>
+      </div>
+      <button id="btn" class="center">ON</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
-
