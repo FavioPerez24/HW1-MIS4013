@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Test Image Display</title>
-</head>
 <body>
-    <h1>Test Image Display</h1>
-    <p>Click the button to change the image:</p>
-    <img id="image1" src="pic_bulboff.gif" alt="Image 1">
-    <img id="image2" src="pic_bulbon.webp" alt="Image 2" style="display:none;">
 
-    <button onclick="changeImage()">Change Image</button>
+<h2>What Can JavaScript Do?</h2>
 
-    <script>
-        function changeImage() {
-            var image1 = document.getElementById("image1");
-            var image2 = document.getElementById("image2");
+<p>JavaScript can change HTML attribute values.</p>
 
-            if (image1.style.display === "none") {
-                image1.style.display = "block";
-                image2.style.display = "none";
-            } else {
-                image1.style.display = "none";
-                image2.style.display = "block";
-            }
-        }
-    </script>
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
 </body>
 </html>
